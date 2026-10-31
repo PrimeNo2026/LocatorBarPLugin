@@ -23,11 +23,11 @@ jobs:
       - name: ZIP entpacken
         run: unzip -o locator-privacy.zip -d extracted
 
-      - name: Java 21 einrichten
+      - name: Java 25 einrichten
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: "21"
+          java-version: "25"
           cache: maven
           cache-dependency-path: extracted/locator-privacy/pom.xml
 
